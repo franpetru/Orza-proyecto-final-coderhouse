@@ -1,0 +1,26 @@
+{
+  "name": "no",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franpetru/Orza.git"
+  },
+  "bugs": {
+    "url": "https://github.com/franpetru/Orza/issues"
+  },
+  "homepage": "https://github.com/franpetru/Orza#readme",
+  "description": ""
+}

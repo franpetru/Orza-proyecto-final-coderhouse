@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Este es un sitio web en donde encontraran productos relacionados a la indumentaria nautica de marca Orza">
+    <meta name="keywords" content="Deportes, Indumentaria, Nautica, Kayak, Lago, Mar, Neoprene, Accesorios, San Martin de los Andes, Argentina, Cubrecockpit, Manoplas, Tambucho, Tapatambucho, Rio">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <script defer src="js/boton__bar.js"></script>
+    <link rel="icon" href="img/FAVICON.ico">
+
+    <title>Orza Indumentaria Nautica Home</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav__menu">
+
+      <img class="header__logo" src="img/logo-orza.png" alt="Imagen del logo">
+        <a href="index.html"></a>
+      <h1 class="header__logo--texto">ORZA</h1>
+      <buton class="nav__toggle">
+        <i class="bi bi-list"></i>
+      </buton>
+      <ul class="nav__container">
+        <li class="nav__menu__item">
+          <a href="index.html" class="nav__menu__link nav__link">Inicio</a>
+        </li>
+        <li class="nav__menu__item ">
+          <a href="ofertas.html" class="nav__menu__link nav__link nav__link--focus">Ofertas</a>
+        </li>
+        <li class="nav__menu__item">
+          <a href="productos.html" class="nav__menu__link nav__link">Categorias</a>
+        </li>
+        <li class="nav__menu__item">
+          <a href="eventos.html" class="nav__menu__link nav__link">Eventos</a>
+        </li>
+        <li class="nav__menu__item">
+          <a href="contacto.html" class="nav__menu__link nav__link">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="main__container">
+    <div class="titulo__container">
+      <h1 class="main--titulo">Productos Destacados</h1>
+    </div>
+    <section class="main__section">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="img/img__carousel--1.jpg" class="d-block w-100" alt="Manoplas de Neoprene imagen ilustrativa">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>manoplas de neoprene</h5>
+              <p>Confeccionadas en neopreno de 2mm con velcro. Industria Argentina</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="0">
+            <img src="img/img__carousel--2.jpg" class="d-block w-100" alt="Hombre andando en kayak con cubreockpit Orza">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>chaleco d.a.f</h5>
+              <p>dispositivo auxiliar de flotación con compartimento para camelbak</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/img__carousel--3.jpg" class="d-block w-100" alt="Chalecos DAF imagen ilustrativa">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>chaleco d.a.f</h5>
+              <p>dispositivo auxiliar de flotación. Industria Argentina</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+  </div>
+        
+  <footer class="main__footer">
+    <div class="footer--logo">
+      <a href="index.html"><img src="img/logo-orza-blanco.png" alt="Imagen logo Orza en color blanco"></a>
+    </div>
+    <div class="footer--nosotros">
+      <h2>Sobre Nosotros</h2>
+      <p>Somos una empresa familiar nacida en San Martin de los Andes, que se dedica a la confección de accesorios naúticos de neoprene y otros materiales de excelente calidad para que puedan disfrutar al máximo y con seguridad.</p>
+    </div>
+    <div class="footer--contacto">
+      <h2>Contacto</h2>
+      <div class="texto__contacto"><a href="#"><i class="bi bi-phone"><h3>+54 2972 - 431602</h3></i></div></a>
+      <div class="texto__contacto"><a href="#"><i class="bi bi-envelope"><h3>orza_indumentaria@yahoo.com.ar</h3></i></div></a>
+      <div class="texto__contacto"><a href="https://goo.gl/maps/H9YwHPM13kSChqza8"><i class="bi bi-signpost-split"><h3>Catamarca 415 - San Martin de los Andes</h3></i></a></div>
+      <div class="texto__contacto"><a href="#"><i class="bi bi-clock"></i><h3>Lunes a viernes de 09:00hs a 17:00hs</h3></a></div>
+    </div>
+    <div class="footer--redes">
+      <div class="redes facebook"><a href="http://www.facebook.com"><i class="bi bi-facebook"></i></a></div>
+      <div class="redes instagram"><a href="http://www.instagram.com"><i class="bi bi-instagram"></i></a></div>
+    </div>
+    <div class="footer--copyright">
+      <a href="index.html"><h3 class="marca__logo">Orza®</h3></a>
+      <a href="#"><h3 class="creador">x Francisco Petrucelli </h3></a>
+      <h3 class="copyright">- Copyright 2021</h3>
+    </div>
+</footer>
+  </footer>
+
+    <script src="js/bootstrap.js"></script>
+    
+</body>
+</html>

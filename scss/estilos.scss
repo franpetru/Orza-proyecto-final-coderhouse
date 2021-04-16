@@ -1,0 +1,831 @@
+/*----------IMPORTACION VARIABLES Y RESETEO HTML-----*/
+@import "variables";
+@import "reset";
+
+html{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*----------MEDIA INICIO DESKTOP--------*/
+
+@media screen and (min-width:"800px"){
+
+/*----------CONTENIDO CAROUSEL-----DESKTOP-----*/
+
+    .carousel-inner{    
+        width: 100vw;
+        height: 82vh;
+        h5{
+            color: $colorWhite;
+            text-transform: uppercase;
+            font-size: 35px;
+        }
+        p{
+            color: $colorWhite;
+            font-size: 18px;
+            background-color:rgba($colorBlack1 , $alpha: 0.6);
+            border-radius: 6px;
+            width: auto;
+            text-transform: uppercase;
+        }
+    }
+
+/*----------CONTENIDO HEADER Y MENU-----DESKTOP-----*/
+
+    .header{
+        background-color: $colorWhite;
+        box-shadow: 9px $colorBlack1;
+        height: 80px;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        .nav__menu{
+            display: flex;
+            justify-content: space-between;
+            .header__logo{
+                width: 350px;
+                height: 40px;
+                margin-top: 20px;
+                margin-left: 10px;
+            }
+            .header__logo--texto{
+                display: none;
+            }
+            .nav__toggle{
+                color: $colorBlack1;
+                background:none;
+                border: none;
+                font-size: 30px;
+                padding: 0 20px;
+                line-height: 60px;
+                display: none;
+            }
+            .nav__container{
+                display: flex;
+                margin-right:40px;
+            }
+            .nav__menu__item{
+                font-size: 20px;
+                margin-left: 10px;
+                line-height: 80px;
+                text-transform:uppercase;
+            }
+            .nav__link{
+                color: $colorBlack1;
+                font-weight: bolder;
+                list-style: none;
+                text-decoration: none;
+            }
+            .nav__link--focus{
+                background-color: $colorBlack1;
+                color: $colorWhite;
+                border-radius: 3px;
+            }
+            .nav__menu__link{
+                padding: 10px 12px;
+            }
+            .nav__menu__link:hover{
+                background-color: $colorBlack1;
+                color: $colorWhite;
+                border-radius: 3px;
+            }
+        }   
+    }
+
+/*----------CONTENIDO PRINCIPAL-----DESKTOP-----*/
+
+    .main__container{
+        .titulo__container{
+            height: 80px;
+            background: linear-gradient($colorBlack1, $colorBlack2);
+        }
+        h1{
+            font-size: 35px;
+            text-transform: uppercase;
+            font-weight: bold;
+            line-height: 80px;
+            color: $colorWhite;
+            margin-left:100px;
+        }
+        .main__section{
+            background-color: $colorWhite;
+        }
+    }
+
+/*----------CONTENIDO OFERTAS-----DESKTOP-----*/        
+    
+    .section--ofertas{
+        display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        background-color: $colorWhite;
+        height: auto;
+        .oferta__section__item{
+            margin: 20px 0px;
+            width: 1fr;
+            height: 500px;
+            justify-self: center;
+            text-align: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            hr{
+                margin:10px 10% ;
+                width: 80%;
+            }
+            h2{
+                font-size: 22px;
+                font-weight:normal;
+                text-transform: uppercase;
+            }
+            img{
+                width: 350px;
+                height: 350px;  
+            }
+            .precio{
+                text-decoration:line-through;
+                font-size: 18px;
+                color: $colorGrey;
+            }
+            .precio--oferta{
+                font-size: 20px;
+                color: $colorRed;
+            }
+        }
+    }
+
+/*----------CONTENIDO CATEGORIAS-----DESKTOP-----*/
+    
+    .section--categoria{
+        display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+        background-color: $colorWhite;
+        .categoria__section__item{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin:30px 0px;
+            justify-self: center;
+            width: 500px;
+            height: 200px;
+            .titulo--categoria{
+                position: absolute;
+                border-radius: 3px;
+                text-transform: uppercase;
+                color: $colorWhite;
+                font-size: 30px;
+                width: 500px;
+                height: 200px;
+                text-align: center;
+                line-height: 200px;
+            }
+            img{
+                width: 500px;
+                height: 200px;
+            }
+        }
+        .categoria__section__item:hover{
+            filter: grayscale(1);
+            transition: 0.5s;
+        }
+    }
+
+/*----------CONTENIDO EVENTO-----DESKTOP-----*/
+
+    .section--evento{
+        height: auto;
+        margin: 30px 20px;
+        .evento__section__item{
+            display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin-bottom:100px;
+            .evento--img{
+                width: 100%;
+                align-self: center;
+                img{
+                    width: 100%;
+                } 
+            }
+            .evento--text{
+                a{
+                    text-decoration-line: none;
+                    h2:hover{
+                        color:$colorRed;
+                    }
+                }
+                h2{
+                    text-transform: uppercase;
+                    text-align: center;
+                    color:$colorBlack1;
+                    margin: 0;
+                    font-size: 40px;
+                }
+                p{
+                    height: fit-content;
+                    padding: 0px 30px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    
+/*----------CONTENIDO CONTACTO-----DESKTOP-----*/
+    
+    .section--contacto{
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+            display: grid;
+            grid-template-areas:
+            "mapa formulario";
+            grid-template-columns: repeat(2, 1fr);
+        .contacto{
+            grid-template-areas: contacto;
+            display: flex;
+        }
+        .mapa{
+            grid-area: mapa;
+            justify-content: center;
+            padding: 10px;
+            margin-left: 50px;
+            width: 600px;
+            height:450px;
+        }
+
+/*----------CONTENIDO FORMULARIO CONTACTO-----DESKTOP-----*/
+
+        .main__formulario{
+            grid-area: formulario ;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            .formulario--deporte{
+                align-self: center;
+                display: inline;
+            }
+            label{
+                text-align: left;
+            }
+            #lbl--deporte{
+                margin: 5px 0px;
+            }
+            .input__container{
+                width: 100%;
+                align-self: center;
+                padding: 5px 0px;
+                background: none; 
+                margin: 10px 0px;
+
+                border-width: 2px;
+                border-top-width: 0px;
+                border-right-width: 0px;
+                border-bottom: 3px solid $colorBlack1;
+                border-left-width: 0px;
+            }
+            .input__container:focus{
+                background-color: rgba($color: $colorBlack2, $alpha: 0.1);
+                outline: none;
+                border-radius: 2px;
+            }
+            .form__container--deporte{
+                align-self: flex-start;
+                margin: 5px 0px;
+            }
+            .form__container--notificacion{
+                margin: 10px 0px;
+                .form-check-input:checked {
+                    background-color: $colorBlack1;
+                    border-color: $colorBlack2;
+                }
+            }
+            #boton--reset{
+                background:rgba($color: $colorBlack1, $alpha: 0.8);
+                color: $colorWhite;
+                padding: 5px;
+                border-radius: 5px;
+                margin: 10px 5px;
+                border:none;
+            }
+            #boton--enviar{
+                background: $colorBlack1;
+                color: $colorWhite;
+                padding: 5px;
+                border-radius: 5px;
+                margin: 10px 5px;
+                border: none;
+            }
+        }
+    }   
+    
+/*----------CONTENIDO FOOTER-----DESKTOP-----*/
+
+    .main__footer{
+        background: linear-gradient($colorBlack2, $colorBlack1);
+        display: grid;
+            grid-template-areas:
+                "logo nosotros contacto"
+                "logo redes-sociales none"
+                "copyright copyright copyright";
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows:300px repeat(2,100px);
+        a,p,h2{
+            color: $colorWhite;
+            text-decoration: none;
+            padding-left: 10px;
+                font-size: 25px;
+        }
+        .footer--logo{
+            text-transform: uppercase;
+            grid-area: logo;
+                justify-self: center;
+                align-self: center;
+            color: $colorWhite;
+            
+        }
+        .footer--nosotros{
+            grid-area: nosotros;
+                justify-self: center;
+            margin-top: 10%;
+            text-transform: uppercase;
+            }
+            p{
+                padding: 10px 15px;
+                font-size: 16px;
+                text-transform:none;
+            };
+        }
+        .footer--contacto{
+            grid-area: contacto;
+                justify-self: center;
+            text-transform: uppercase;
+            margin-top: 10%;
+            .texto__contacto{
+                padding-top: 5px;
+            }
+            h2{
+                color: $colorWhite;
+                text-decoration: none;
+                padding-left: 10px;
+                font-size: 25px;
+            }
+            h3{
+                display: inline;
+                font-size: 13px;
+                margin-left: 5px;
+            }
+        }
+        .footer--redes{
+            grid-area: redes-sociales;
+                justify-self: center;
+                align-self: center;
+            font-size: 30px;
+            color: $colorWhite;
+            .redes{
+                display: inline;
+                margin-left: 20px;
+            }
+            .redes a:hover{
+                color: $colorHover
+            }
+        }
+        .footer--copyright{
+            grid-area: copyright;
+                justify-self: center;
+                align-self: center;
+                display: flex;
+            h3{
+                color: $colorWhite;
+                font-size: 15px;
+            }
+            .marca__logo:hover, .creador:hover{
+                color: $colorHover;
+                transition: 0.3s;
+            }
+            .copyright{
+                margin-left: 5px;
+            }
+        }
+    }
+
+/*FIN DESKTOP*/
+
+/*INICIO MOVIL 768*/
+
+@media screen and (max-width:"768px"){
+
+/*----------CONTENIDO CAROUSEL-----CELULAR-----*/
+
+    .carousel{
+
+        .carousel-inner{
+            .d-block{
+                width: 100vw;
+                height: 300px;
+            }
+            h5{
+                color: $colorWhite;
+                text-transform: uppercase;
+            }
+            p{
+                color: $colorWhite;
+                background-color:rgba($colorBlack1 , $alpha: 0.6);
+                border-radius: 6px;
+                width: auto;
+                text-transform: uppercase;
+            }
+            
+        }
+    }
+    
+/*----------CONTENIDO HEADER Y MENU-----CELULAR-----*/
+
+    .header{
+        background-color: $colorWhite;
+        height: 60px;
+        position: sticky;
+        top: 0;
+        left: 0px;
+        width: 100vw;
+        .nav__menu{
+            display: flex;
+            justify-content: space-evenly;
+            .header__logo{
+            display: none;
+
+            }
+            .header__logo--texto{
+                color: $colorBlack1;
+                font-weight: bolder;
+                font-size: 50px;
+            }
+            .nav__toggle{
+                color: $colorBlack1;
+                background:none;
+                border: none;
+                font-size: 30px;
+                padding: 0 20px;
+                line-height: 60px;
+                
+                display: block;
+            }
+            .nav__container{
+                display: flex;
+                    align-items: center ;
+                    flex-direction: column;
+                    background: linear-gradient(to left, $colorBlack2, $colorBlack1);
+                position: fixed;
+                top: 60px;
+                width: 100vw;
+                height: 100vh;
+                padding: 20px 0px;
+                overflow-y: auto;
+                
+                left: 100%;
+                transition: left 0.3s;
+            }
+            .nav__container--visible{
+                left: 0;
+            }
+            .nav__menu__item{
+                font-size: 20px;
+                margin-left: 10px;
+                line-height: 80px;
+                text-transform:uppercase;
+            }
+            .nav__link{
+                
+                color: $colorWhite;
+                font-weight: bolder;
+                list-style: none;
+                text-decoration: none;
+            }
+            .nav__link--focus{
+                background-color: $colorWhite;
+                color: $colorBlack1;
+                border-radius: 3px;
+            }
+            .nav__menu__link{
+                padding: 10px 12px;
+            }
+            .nav__menu__link:hover{
+                background-color: none;
+                color: $colorBlack1;
+                border-radius: 3px;
+            }
+        }   
+        
+    }
+    
+    /*----------CONTENIDO TITULO MENU-----CELULAR-----*/
+
+    .main__container{
+        .titulo__container{
+            height: 60px;
+            background: linear-gradient($colorBlack1, $colorBlack2);
+        }
+        h1{
+            font-size: 25px;
+            text-transform: uppercase;
+            font-weight: bold;
+            line-height: 60px;
+            color: $colorWhite;
+            text-align: center;
+        }
+        .main__section{
+            background-color: $colorWhite;
+        }
+    }
+
+/*----------CONTENIDO OFERTAS-----CELULAR-----*/
+
+        .section--ofertas{
+            display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(6, 1fr);
+            background-color: $colorWhite;
+            height: auto;
+            .oferta__section__item{
+                margin: 20px 0px;
+                width: 1fr;
+                height: 500px;
+                justify-self: center;
+                text-align: center;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                hr{
+                    margin:10px 10% ;
+                    width: 80%;
+                }
+                h2{
+                    font-size: 22px;
+                    font-weight:normal;
+                    text-transform: uppercase;
+                }
+                img{
+                    width: 350px;
+                    height: 350px;  
+                }
+                .precio{
+                    text-decoration:line-through;
+                    font-size: 18px;
+                    color: $colorGrey;
+                }
+                .precio--oferta{
+                    font-size: 20px;
+                    color: $colorRed;
+                }
+            }
+        }
+
+/*----------CONTENIDO CATEGORIAS-----CELULAR-----*/
+
+        .section--categoria{
+            display: grid;
+                grid-template-columns:1fr;
+                grid-template-rows: repeat(4,1fr);
+            background-color: $colorWhite;
+            .categoria__section__item{
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                margin:30px 0px;
+                justify-self: center;
+                width: 100vw;
+                height: 200px;
+                .titulo--categoria{
+                    position: absolute;
+                    border-radius: 3px;
+                    text-transform: uppercase;
+                    color: $colorWhite;
+                    font-size: 30px;
+                    width: 100vw;
+                    height: 200px;
+                    text-align: center;
+                    line-height: 200px;
+                }
+                img{
+                    width: 100vw;
+                    height: 200px;
+                }
+            }
+            .categoria__section__item:hover{
+                filter: grayscale(1);
+                transition: 0.5s;
+            }
+        }
+
+/*----------CONTENIDO EVENTO-----CELULAR-----*/
+
+        .section--evento{
+            height: auto;
+            background-color: $colorWhite;
+            .evento__section__item{
+                margin-top: 20px;
+                padding: 10px;
+                display: grid;
+                    grid-template-rows: repeat(2, 0.5fr);
+                    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                .evento--img{
+                    width: 100%;
+                    align-self: center;
+                    img{
+                        width: 100%;
+                    } 
+                }
+                .evento--text{
+                    a{
+                        text-decoration-line: none;
+                        h1:hover{
+                            color:$colorRed;
+                        }
+                    }
+                    h2{
+                        text-transform: uppercase;
+                        text-align: center;
+                        color:$colorBlack1;
+                        margin: 0;
+                        font-size: 40px;
+                    }
+                    p{
+                        height: fit-content;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+/*----------CONTENIDO CONTACTO-----CELULAR-----*/
+        
+        .section--contacto{
+            height: auto;
+            width: 100%;
+                display: grid;
+                grid-template-areas:
+                "formulario"
+                "mapa";
+                grid-template-rows: repeat(2, 1fr);
+            .contacto{
+                grid-template-areas: contacto;
+                display: flex;
+            }
+            .mapa{
+                grid-area: mapa;
+                width: 100%;
+                height:450px;
+                padding: 10px 10px;
+            }
+
+/*----------CONTENIDO FORMULARIO CONTACTO-----CELULAR-----*/
+
+        .main__formulario{
+            padding: 20px 10px;
+            grid-area: formulario ;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            .formulario--deporte{
+                align-self: center;
+                display: inline;
+            }
+            #lbl--deporte{
+                margin: 5px 0px;
+            }
+            .input__container{
+                width: 100%;
+                padding: 5px 0px;
+                background: none; 
+                margin: 10px 0px;
+
+                border-top-width: 0px;
+                border-right-width: 0px;
+                border-bottom: 2px solid $colorBlack1;
+                border-left-width: 0px;
+            }
+            .input__container:focus{
+                background-color: rgba($color: $colorBlack2, $alpha: 0.1);
+                outline: none;
+                border-radius: 2px;
+            }
+            .form__container--deporte{
+                align-self: center;
+                margin: 5px 0px;
+            }
+            .form__container--notificacion{
+                margin: 10px 0px;
+                align-self: center;
+                .form-check-input:checked {
+                    background-color: $colorBlack1;
+                    border-color: $colorBlack2;
+                }
+            }
+            #boton--reset{
+                background:rgba($color: $colorBlack1, $alpha: 0.8);
+                color: $colorWhite;
+                padding: 5px;
+                border-radius: 5px;
+                margin: 10px 5px;
+                border:none;
+            }
+            #boton--enviar{
+                background: $colorBlack1;
+                color: $colorWhite;
+                padding: 5px;
+                border-radius: 5px;
+                margin: 10px 5px;
+                border: none;
+            }
+        }
+    }
+
+/*----------MENU INVISIBLE PARA -->-----CELULAR-----*/
+
+    .main__container--novisible{
+        display: none;
+    }
+
+/*----------CONTENIDO FOOTER-----CELULAR-----*/
+
+    .main__footer{
+        background: linear-gradient($colorBlack2, $colorBlack1);
+        display: grid;
+            grid-template-areas:
+            "nosotros"
+            "nosotros"
+            "contacto"
+            "redes-sociales"
+            "copyright";
+            grid-template-columns:1fr;
+            grid-template-rows:repeat(4, 150px) 50px;
+        a,p,h2{
+            color: $colorWhite;
+            text-decoration: none;
+        }
+        .footer--logo{
+            display: none;
+        }
+        .footer--nosotros{
+            grid-area: nosotros;
+                justify-self: center;
+                align-self: center;
+            h2{
+                font-size: 25px;
+                text-transform: uppercase;
+                text-align: center;
+            }
+            p{
+                font-size: 18px;
+                font-weight: bold;
+                padding: 10px 15px;
+                text-align: center
+            }
+        }
+        .footer--contacto{
+            grid-area: contacto;
+                justify-self: center;
+                align-self: center;
+            text-transform: uppercase;
+            h2{
+                font-size: 25px;
+                text-transform: uppercase;
+                text-align: center;
+            }
+            .texto__contacto{
+                padding-top: 5px;
+                i, h3{
+                    display: inline;
+                }
+                h3{
+                    font-size: 14px;
+                    margin-left: 10px;
+                }
+            }
+        }
+        
+        .footer--redes{
+            grid-area: redes-sociales;
+                justify-self: center;
+                align-self: center;
+            font-size: 30px;
+            color: $colorWhite;
+            .redes{
+                display: inline;
+                margin-left: 20px;
+            }
+        }
+        .footer--copyright{
+            grid-area: copyright;
+            display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                padding: 0px 2px;
+            h3{
+                color: $colorWhite;
+                font-size: 14px;
+            }
+            .marca__logo:hover, .creador:hover{
+                color: $colorBlack2;
+                transition: 0.3s;
+            }
+            .copyright{
+                margin-left: 5px;
+            }
+        }
+    }
+} 
+
+/*------------FIN MEDIA 768PX---------*/
