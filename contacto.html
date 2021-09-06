@@ -33,7 +33,7 @@
           <a href="index.html" class="nav__menu__link nav__link">Inicio</a>
         </li>
         <li class="nav__menu__item ">
-          <a href="ofertas.html" class="nav__menu__link nav__link nav__link--focus">Ofertas</a>
+          <a href="ofertas.html" class="nav__menu__link nav__link">Ofertas</a>
         </li>
         <li class="nav__menu__item">
           <a href="productos.html" class="nav__menu__link nav__link">Categorias</a>
@@ -42,7 +42,7 @@
           <a href="eventos.html" class="nav__menu__link nav__link">Eventos</a>
         </li>
         <li class="nav__menu__item">
-          <a href="contacto.html" class="nav__menu__link nav__link">Contacto</a>
+          <a href="contacto.html" class="nav__menu__link nav__link nav__link--focus">Contacto</a>
         </li>
       </ul>
     </nav>
@@ -56,7 +56,7 @@
     <section class="main__section section--contacto">
             
       <div class="contacto__section__item">
-        <form class="main__formulario" autocomplete= "off">
+        <form class="main__formulario" id="formulario" autocomplete= "off">
           <label for="nombre"></label>
             <input class="input__container" type="text" name="Nombre" id="nombre" placeholder="Nombre">
 
@@ -68,7 +68,7 @@
 
           <div class="form__container--deporte">
             <label for="Deporte" id="lbl--deporte" >Deportista?</label>
-              <select class="container__deporte--select" name="opcion">
+              <select class="container__deporte--select" id="opcionDeportista" name="opcion">
                   <option selected>Elegir...</option>
                   <option value="Si">Si</option>
                   <option value="No">No</option>
@@ -131,6 +131,7 @@
   </footer>
 
     <script src="js/bootstrap.js"></script>
+    <script src="js/formSubmit.js"></script>
     
 </body>
 </html>
